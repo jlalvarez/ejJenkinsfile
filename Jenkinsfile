@@ -5,19 +5,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                ruby -v
+                sh 'ruby -v'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                docker ps
+                sh 'docker ps'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                node -v
+                sh 'node -v'
             }
         }
     }
