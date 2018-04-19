@@ -1,16 +1,16 @@
 # Ejemplo Jenkinsfile
 
 
-pipeline {
+    pipeline {
 
-agent any
+        agent any
 
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
+        stages {
+            stage('Build') {
+                steps {
+                    echo 'Building..'
+                }
             }
-        }
         stage('Test') {
             steps {
                 echo 'Testing..'
@@ -22,4 +22,4 @@ agent any
             }
         }
     }
-}
+
